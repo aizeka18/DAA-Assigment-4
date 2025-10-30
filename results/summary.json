@@ -1,0 +1,125 @@
+{
+  "title" : "Smart City Scheduling - Dataset Summary Report",
+  "generated" : "Fri Oct 31 01:41:23 GMT+05:00 2025",
+  "totalDatasets" : 8,
+  "statistics" : {
+    "totalNodes" : 146,
+    "totalEdges" : 286,
+    "totalSCCs" : 115,
+    "totalProcessingTimeNs" : 24812000,
+    "averageTimePerDatasetNs" : 3101500
+  },
+  "datasets" : [ {
+    "name" : "small1.json",
+    "nodes" : 7,
+    "edges" : 6,
+    "sccs" : 5,
+    "criticalPathLength" : 9,
+    "processingTimeNs" : {
+      "total" : 18443600,
+      "scc" : 3283100,
+      "condensation" : 2983100,
+      "topological" : 1428200,
+      "shortestPaths" : 830900,
+      "criticalPath" : 1433200
+    }
+  }, {
+    "name" : "small2.json",
+    "nodes" : 7,
+    "edges" : 7,
+    "sccs" : 7,
+    "criticalPathLength" : 8,
+    "processingTimeNs" : {
+      "total" : 981600,
+      "scc" : 81200,
+      "condensation" : 28700,
+      "topological" : 47900,
+      "shortestPaths" : 30500,
+      "criticalPath" : 26200
+    }
+  }, {
+    "name" : "small3.json",
+    "nodes" : 6,
+    "edges" : 8,
+    "sccs" : 3,
+    "criticalPathLength" : 3,
+    "processingTimeNs" : {
+      "total" : 370700,
+      "scc" : 49400,
+      "condensation" : 12300,
+      "topological" : 20500,
+      "shortestPaths" : 5900,
+      "criticalPath" : 9900
+    }
+  }, {
+    "name" : "medium1.json",
+    "nodes" : 14,
+    "edges" : 16,
+    "sccs" : 10,
+    "criticalPathLength" : 18,
+    "processingTimeNs" : {
+      "total" : 638000,
+      "scc" : 91200,
+      "condensation" : 28500,
+      "topological" : 54200,
+      "shortestPaths" : 12800,
+      "criticalPath" : 22900
+    }
+  }, {
+    "name" : "medium3.json",
+    "nodes" : 12,
+    "edges" : 16,
+    "sccs" : 12,
+    "criticalPathLength" : 18,
+    "processingTimeNs" : {
+      "total" : 959500,
+      "scc" : 87000,
+      "condensation" : 52800,
+      "topological" : 31600,
+      "shortestPaths" : 10900,
+      "criticalPath" : 24600
+    }
+  }, {
+    "name" : "large1.json",
+    "nodes" : 25,
+    "edges" : 40,
+    "sccs" : 19,
+    "criticalPathLength" : 19,
+    "processingTimeNs" : {
+      "total" : 1411900,
+      "scc" : 89900,
+      "condensation" : 196000,
+      "topological" : 56600,
+      "shortestPaths" : 28300,
+      "criticalPath" : 21400
+    }
+  }, {
+    "name" : "large2.json",
+    "nodes" : 35,
+    "edges" : 137,
+    "sccs" : 35,
+    "criticalPathLength" : 89,
+    "processingTimeNs" : {
+      "total" : 1129700,
+      "scc" : 182600,
+      "condensation" : 171800,
+      "topological" : 69900,
+      "shortestPaths" : 22300,
+      "criticalPath" : 39800
+    }
+  }, {
+    "name" : "large3.json",
+    "nodes" : 40,
+    "edges" : 56,
+    "sccs" : 24,
+    "criticalPathLength" : 45,
+    "processingTimeNs" : {
+      "total" : 877000,
+      "scc" : 152100,
+      "condensation" : 68200,
+      "topological" : 52900,
+      "shortestPaths" : 12200,
+      "criticalPath" : 27300
+    }
+  } ]
+}

@@ -1,0 +1,132 @@
+{
+  "analysis" : "Smart City Scheduling Graph Analysis",
+  "dataset" : "large1",
+  "timestamp" : "Fri Oct 31 01:41:23 GMT+05:00 2025",
+  "version" : "1.0",
+  "graph" : {
+    "nodes" : 25,
+    "edges" : 40,
+    "source" : 9,
+    "weightModel" : "edge",
+    "directed" : true
+  },
+  "stronglyConnectedComponents" : {
+    "totalComponents" : 19,
+    "components" : [ {
+      "id" : 0,
+      "size" : 1,
+      "nodes" : [ 18 ]
+    }, {
+      "id" : 1,
+      "size" : 1,
+      "nodes" : [ 16 ]
+    }, {
+      "id" : 2,
+      "size" : 1,
+      "nodes" : [ 19 ]
+    }, {
+      "id" : 3,
+      "size" : 1,
+      "nodes" : [ 22 ]
+    }, {
+      "id" : 4,
+      "size" : 1,
+      "nodes" : [ 23 ]
+    }, {
+      "id" : 5,
+      "size" : 1,
+      "nodes" : [ 24 ]
+    }, {
+      "id" : 6,
+      "size" : 1,
+      "nodes" : [ 21 ]
+    }, {
+      "id" : 7,
+      "size" : 1,
+      "nodes" : [ 20 ]
+    }, {
+      "id" : 8,
+      "size" : 1,
+      "nodes" : [ 13 ]
+    }, {
+      "id" : 9,
+      "size" : 3,
+      "nodes" : [ 0, 2, 1 ]
+    }, {
+      "id" : 10,
+      "size" : 3,
+      "nodes" : [ 5, 3, 4 ]
+    }, {
+      "id" : 11,
+      "size" : 3,
+      "nodes" : [ 6, 8, 7 ]
+    }, {
+      "id" : 12,
+      "size" : 1,
+      "nodes" : [ 9 ]
+    }, {
+      "id" : 13,
+      "size" : 1,
+      "nodes" : [ 10 ]
+    }, {
+      "id" : 14,
+      "size" : 1,
+      "nodes" : [ 12 ]
+    }, {
+      "id" : 15,
+      "size" : 1,
+      "nodes" : [ 14 ]
+    }, {
+      "id" : 16,
+      "size" : 1,
+      "nodes" : [ 17 ]
+    }, {
+      "id" : 17,
+      "size" : 1,
+      "nodes" : [ 15 ]
+    }, {
+      "id" : 18,
+      "size" : 1,
+      "nodes" : [ 11 ]
+    } ]
+  },
+  "topologicalOrdering" : {
+    "componentOrder" : [ 0, 1, 8, 9, 2, 10, 7, 6, 3, 11, 4, 12, 5, 13, 18, 14, 15, 17, 16 ],
+    "taskOrder" : [ 18, 16, 13, 0, 2, 1, 19, 5, 3, 4, 20, 21, 22, 6, 8, 7, 23, 9, 24, 10, 11, 12, 14, 15, 17 ]
+  },
+  "shortestPaths" : {
+    "source" : 9,
+    "distances" : {
+      "component_10" : 3,
+      "component_11" : 4,
+      "component_12" : 5,
+      "component_13" : 8,
+      "component_14" : 12,
+      "component_15" : 16,
+      "component_16" : 18,
+      "component_17" : 16,
+      "component_18" : 13
+    },
+    "optimalPathExample" : [ 9, 10 ]
+  },
+  "criticalPath" : {
+    "path" : [ 9, 10, 11, 12, 13, 14, 15, 16 ],
+    "length" : 19
+  },
+  "performance" : {
+    "realTimeNs" : {
+      "scc" : 89900,
+      "condensation" : 196000,
+      "topologicalSort" : 56600,
+      "shortestPaths" : 28300,
+      "criticalPath" : 21400,
+      "total" : 1411900
+    },
+    "operationCounts" : {
+      "dfsVisits" : 50,
+      "edgeTraversals" : 80,
+      "queueOperations" : 38,
+      "relaxations" : 31
+    }
+  }
+}

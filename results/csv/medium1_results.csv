@@ -1,0 +1,56 @@
+SMART CITY SCHEDULING ANALYSIS RESULTS
+=======================================
+Dataset: medium1
+Generated: Fri Oct 31 01:41:23 GMT+05:00 2025
+
+1. GRAPH INFORMATION
+-------------------
+Nodes,14
+Edges,16
+Source,6
+Weight Model,edge
+Directed,true
+
+2. STRONGLY CONNECTED COMPONENTS
+--------------------------------
+Total Components,10
+Component ID,Size,Nodes
+0,3,"0, 2, 1"
+1,1,"6"
+2,3,"3, 5, 4"
+3,1,"7"
+4,1,"8"
+5,1,"9"
+6,1,"10"
+7,1,"11"
+8,1,"12"
+9,1,"13"
+
+3. TOPOLOGICAL ORDERING
+-----------------------
+Component Order,"0, 1, 2, 3, 4, 5, 6, 7, 8, 9"
+Task Order,"0, 2, 1, 6, 3, 5, 4, 7, 8, 9, 10, 11, 12, 13"
+
+4. SHORTEST PATHS FROM SOURCE 6
+----------------------------------------
+Target Component,Distance
+7,1
+8,3
+9,6
+
+Optimal Path Example,"6, 7"
+
+5. CRITICAL PATH ANALYSIS
+-------------------------
+Critical Path,"0, 2, 3, 4, 5, 6, 7, 8, 9"
+Critical Path Length,18
+
+6. PERFORMANCE METRICS
+----------------------
+Algorithm,Time (ns),Operations
+SCC,91200,60
+Condensation Graph,28500,-
+Topological Sort,54200,20
+Shortest Path,12800,3
+Critical Path,22900,10
+TOTAL,638000,93

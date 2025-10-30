@@ -1,0 +1,70 @@
+SMART CITY SCHEDULING ANALYSIS RESULTS
+=======================================
+Dataset: large3
+Generated: Fri Oct 31 01:41:23 GMT+05:00 2025
+
+1. GRAPH INFORMATION
+-------------------
+Nodes,40
+Edges,56
+Source,20
+Weight Model,edge
+Directed,true
+
+2. STRONGLY CONNECTED COMPONENTS
+--------------------------------
+Total Components,24
+Component ID,Size,Nodes
+0,5,"0, 4, 1, 3, 2"
+1,8,"5, 12, 11, 10, 9, 8, 7, 6"
+2,1,"19"
+3,1,"20"
+4,1,"21"
+5,1,"22"
+6,1,"23"
+7,1,"24"
+8,6,"13, 18, 17, 16, 15, 14"
+9,1,"25"
+10,1,"26"
+11,1,"27"
+12,1,"28"
+13,1,"29"
+14,1,"30"
+15,1,"31"
+16,1,"32"
+17,1,"33"
+18,1,"34"
+19,1,"35"
+20,1,"36"
+21,1,"37"
+22,1,"38"
+23,1,"39"
+
+3. TOPOLOGICAL ORDERING
+-----------------------
+Component Order,"0, 1, 8, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23"
+Task Order,"0, 4, 1, 3, 2, 5, 12, 11, 10, 9, 8, 7, 6, 13, 18, 17, 16, 15, 14, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39"
+
+4. SHORTEST PATHS FROM SOURCE 20
+----------------------------------------
+Target Component,Distance
+21,3
+22,5
+23,6
+
+Optimal Path Example,"20, 21"
+
+5. CRITICAL PATH ANALYSIS
+-------------------------
+Critical Path,"0, 1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23"
+Critical Path Length,45
+
+6. PERFORMANCE METRICS
+----------------------
+Algorithm,Time (ns),Operations
+SCC,152100,192
+Condensation Graph,68200,-
+Topological Sort,52900,48
+Shortest Path,12200,3
+Critical Path,27300,27
+TOTAL,877000,270

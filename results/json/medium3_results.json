@@ -1,0 +1,98 @@
+{
+  "analysis" : "Smart City Scheduling Graph Analysis",
+  "dataset" : "medium3",
+  "timestamp" : "Fri Oct 31 01:41:23 GMT+05:00 2025",
+  "version" : "1.0",
+  "graph" : {
+    "nodes" : 12,
+    "edges" : 16,
+    "source" : 8,
+    "weightModel" : "edge",
+    "directed" : true
+  },
+  "stronglyConnectedComponents" : {
+    "totalComponents" : 12,
+    "components" : [ {
+      "id" : 0,
+      "size" : 1,
+      "nodes" : [ 0 ]
+    }, {
+      "id" : 1,
+      "size" : 1,
+      "nodes" : [ 2 ]
+    }, {
+      "id" : 2,
+      "size" : 1,
+      "nodes" : [ 5 ]
+    }, {
+      "id" : 3,
+      "size" : 1,
+      "nodes" : [ 1 ]
+    }, {
+      "id" : 4,
+      "size" : 1,
+      "nodes" : [ 4 ]
+    }, {
+      "id" : 5,
+      "size" : 1,
+      "nodes" : [ 7 ]
+    }, {
+      "id" : 6,
+      "size" : 1,
+      "nodes" : [ 3 ]
+    }, {
+      "id" : 7,
+      "size" : 1,
+      "nodes" : [ 6 ]
+    }, {
+      "id" : 8,
+      "size" : 1,
+      "nodes" : [ 8 ]
+    }, {
+      "id" : 9,
+      "size" : 1,
+      "nodes" : [ 10 ]
+    }, {
+      "id" : 10,
+      "size" : 1,
+      "nodes" : [ 9 ]
+    }, {
+      "id" : 11,
+      "size" : 1,
+      "nodes" : [ 11 ]
+    } ]
+  },
+  "topologicalOrdering" : {
+    "componentOrder" : [ 0, 3, 1, 6, 4, 2, 7, 5, 8, 10, 9, 11 ],
+    "taskOrder" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 ]
+  },
+  "shortestPaths" : {
+    "source" : 8,
+    "distances" : {
+      "component_9" : 3,
+      "component_10" : 2,
+      "component_11" : 3
+    },
+    "optimalPathExample" : [ 8, 9 ]
+  },
+  "criticalPath" : {
+    "path" : [ 0, 3, 4, 7, 8, 9, 11 ],
+    "length" : 18
+  },
+  "performance" : {
+    "realTimeNs" : {
+      "scc" : 87000,
+      "condensation" : 52800,
+      "topologicalSort" : 31600,
+      "shortestPaths" : 10900,
+      "criticalPath" : 24600,
+      "total" : 959500
+    },
+    "operationCounts" : {
+      "dfsVisits" : 24,
+      "edgeTraversals" : 32,
+      "queueOperations" : 24,
+      "relaxations" : 20
+    }
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "analysis" : "Smart City Scheduling Graph Analysis",
+  "dataset" : "medium1",
+  "timestamp" : "Fri Oct 31 01:41:23 GMT+05:00 2025",
+  "version" : "1.0",
+  "graph" : {
+    "nodes" : 14,
+    "edges" : 16,
+    "source" : 6,
+    "weightModel" : "edge",
+    "directed" : true
+  },
+  "stronglyConnectedComponents" : {
+    "totalComponents" : 10,
+    "components" : [ {
+      "id" : 0,
+      "size" : 3,
+      "nodes" : [ 0, 2, 1 ]
+    }, {
+      "id" : 1,
+      "size" : 1,
+      "nodes" : [ 6 ]
+    }, {
+      "id" : 2,
+      "size" : 3,
+      "nodes" : [ 3, 5, 4 ]
+    }, {
+      "id" : 3,
+      "size" : 1,
+      "nodes" : [ 7 ]
+    }, {
+      "id" : 4,
+      "size" : 1,
+      "nodes" : [ 8 ]
+    }, {
+      "id" : 5,
+      "size" : 1,
+      "nodes" : [ 9 ]
+    }, {
+      "id" : 6,
+      "size" : 1,
+      "nodes" : [ 10 ]
+    }, {
+      "id" : 7,
+      "size" : 1,
+      "nodes" : [ 11 ]
+    }, {
+      "id" : 8,
+      "size" : 1,
+      "nodes" : [ 12 ]
+    }, {
+      "id" : 9,
+      "size" : 1,
+      "nodes" : [ 13 ]
+    } ]
+  },
+  "topologicalOrdering" : {
+    "componentOrder" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 ],
+    "taskOrder" : [ 0, 2, 1, 6, 3, 5, 4, 7, 8, 9, 10, 11, 12, 13 ]
+  },
+  "shortestPaths" : {
+    "source" : 6,
+    "distances" : {
+      "component_7" : 1,
+      "component_8" : 3,
+      "component_9" : 6
+    },
+    "optimalPathExample" : [ 6, 7 ]
+  },
+  "criticalPath" : {
+    "path" : [ 0, 2, 3, 4, 5, 6, 7, 8, 9 ],
+    "length" : 18
+  },
+  "performance" : {
+    "realTimeNs" : {
+      "scc" : 91200,
+      "condensation" : 28500,
+      "topologicalSort" : 54200,
+      "shortestPaths" : 12800,
+      "criticalPath" : 22900,
+      "total" : 638000
+    },
+    "operationCounts" : {
+      "dfsVisits" : 28,
+      "edgeTraversals" : 32,
+      "queueOperations" : 20,
+      "relaxations" : 13
+    }
+  }
+}

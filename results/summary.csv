@@ -1,0 +1,22 @@
+SMART CITY SCHEDULING - DATASET SUMMARY
+=======================================
+Generated: Fri Oct 31 01:41:23 GMT+05:00 2025
+
+Dataset,Nodes,Edges,SCCs,Critical Path Length,Total Time (ns),SCC Time,Condensation Time,Topo Time,SP Time,CP Time
+small1.json,7,6,5,9,18443600,3283100,2983100,1428200,830900,1433200
+small2.json,7,7,7,8,981600,81200,28700,47900,30500,26200
+small3.json,6,8,3,3,370700,49400,12300,20500,5900,9900
+medium1.json,14,16,10,18,638000,91200,28500,54200,12800,22900
+medium3.json,12,16,12,18,959500,87000,52800,31600,10900,24600
+large1.json,25,40,19,19,1411900,89900,196000,56600,28300,21400
+large2.json,35,137,35,89,1129700,182600,171800,69900,22300,39800
+large3.json,40,56,24,45,877000,152100,68200,52900,12200,27300
+
+SUMMARY STATISTICS
+------------------
+Total Datasets,8
+Total Nodes,146
+Total Edges,286
+Total SCCs,115
+Total Processing Time,24812000 ns
+Average Time per Dataset,3101500 ns

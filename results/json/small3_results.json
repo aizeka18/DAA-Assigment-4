@@ -1,0 +1,57 @@
+{
+  "analysis" : "Smart City Scheduling Graph Analysis",
+  "dataset" : "small3",
+  "timestamp" : "Fri Oct 31 01:41:23 GMT+05:00 2025",
+  "version" : "1.0",
+  "graph" : {
+    "nodes" : 6,
+    "edges" : 8,
+    "source" : 2,
+    "weightModel" : "edge",
+    "directed" : true
+  },
+  "stronglyConnectedComponents" : {
+    "totalComponents" : 3,
+    "components" : [ {
+      "id" : 0,
+      "size" : 2,
+      "nodes" : [ 0, 1 ]
+    }, {
+      "id" : 1,
+      "size" : 2,
+      "nodes" : [ 3, 2 ]
+    }, {
+      "id" : 2,
+      "size" : 2,
+      "nodes" : [ 5, 4 ]
+    } ]
+  },
+  "topologicalOrdering" : {
+    "componentOrder" : [ 0, 1, 2 ],
+    "taskOrder" : [ 0, 1, 3, 2, 5, 4 ]
+  },
+  "shortestPaths" : {
+    "source" : 2,
+    "distances" : "No reachable components"
+  },
+  "criticalPath" : {
+    "path" : [ 0, 1, 2 ],
+    "length" : 3
+  },
+  "performance" : {
+    "realTimeNs" : {
+      "scc" : 49400,
+      "condensation" : 12300,
+      "topologicalSort" : 20500,
+      "shortestPaths" : 5900,
+      "criticalPath" : 9900,
+      "total" : 370700
+    },
+    "operationCounts" : {
+      "dfsVisits" : 12,
+      "edgeTraversals" : 16,
+      "queueOperations" : 6,
+      "relaxations" : 2
+    }
+  }
+}
